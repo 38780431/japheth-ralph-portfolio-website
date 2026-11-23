@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Japheth Ralph Nyadwera</title>
+    <meta name="description" content="Explore Japheth Ralph Nyadwera's public web development and ICT projects, with verified live previews and GitHub source links.">
+    <meta name="theme-color" content="#0b0d12">
+    <meta name="color-scheme" content="dark light">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header><div class="container">
+        <a class="logo" href="index.html"><span class="logo-highlight">JRN</span> PORTFOLIO</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false"><i class="bx bx-sun" aria-hidden="true"></i></button>
+        <nav><button class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+            <ul class="nav-links"><li><a href="index.html">HOME</a></li><li><a href="about.html">ABOUT</a></li><li class="active"><a href="portfolio.html" aria-current="page">PORTFOLIO</a></li><li><a href="services.html">SERVICES</a></li><li><a href="contact.html">CONTACT</a></li></ul>
+        </nav>
+    </div></header>
+    <main id="main-content"><section class="section projects"><div class="container">
+        <h1 class="page-title">My Projects</h1><p class="section-subtitle">Selected work from my public GitHub repositories</p>
+        <div class="project-profile-link"><a href="https://github.com/38780431" class="btn" target="_blank" rel="noopener">View GitHub Profile</a></div>
+        <div class="project-filters">
+            <label class="sr-only" for="project-search">Search projects</label>
+            <input id="project-search" class="project-search" type="search" placeholder="Search projects, skills, or technologies..." autocomplete="off">
+            <div class="project-filter-buttons" role="group" aria-label="Filter projects by type">
+                <button class="project-filter" type="button" data-filter="all" aria-pressed="true">All</button>
+                <button class="project-filter" type="button" data-filter="websites" aria-pressed="false">Websites</button>
+                <button class="project-filter" type="button" data-filter="web-apps" aria-pressed="false">Web apps</button>
+                <button class="project-filter" type="button" data-filter="portfolios" aria-pressed="false">Portfolios</button>
+                <button class="project-filter" type="button" data-filter="education" aria-pressed="false">Education</button>
+            </div>
+        </div>
+        <p class="project-result-count" aria-live="polite"></p>
+        <p class="project-empty-state" hidden>No projects match that search. Try another term or category.</p>
+        <div class="project-grid">
+        <article class="project-card" data-category="web-apps">
+            <div class="project-preview preview-rental"><i class="bx bx-building-house" aria-hidden="true"></i></div>
+            <h3>House Rental Management System</h3><p class="project-description">A web-based rental house and records management platform.</p>
+            <p class="project-details">The repository describes a PHP rental-management application with a landing page, administrator area, blog, and database. Its README mentions SMS communication and M-Pesa payments.</p>
+            <div class="tech-tags"><span>PHP</span><span>MySQL</span><span>Rental management</span></div>
+            <div class="project-links"><a href="https://github.com/38780431/HOUSE-RENTAL-MANAGEMENT-SYSTEM" class="btn btn-outline" target="_blank" rel="noopener">View Code</a></div>
+        </article>
+        <article class="project-card" data-category="websites">
+            <div class="project-preview preview-digital has-screenshot"><img src="assets/ralph-digital-solutions.png" alt="Screenshot of the Ralph Digital Solutions homepage" loading="lazy"></div>
+            <h3>Ralph Digital Solutions Website</h3><p class="project-description">A responsive multi-section digital agency website.</p>
+            <p class="project-details">A multi-section site for digital services, with responsive layouts and client-side interactions. The repository includes HTML, CSS, JavaScript, and a web app manifest.</p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links"><a href="https://38780431.github.io/Ralph-Digital-Solutions-website" class="btn" target="_blank" rel="noopener">Live Demo</a><a href="https://github.com/38780431/Ralph-Digital-Solutions-website" class="btn btn-outline" target="_blank" rel="noopener">View Code</a></div>
+        </article>
+        <article class="project-card" data-category="web-apps education">
+            <div class="project-preview preview-alert"><i class="bx bx-bell" aria-hidden="true"></i></div>
+            <h3>Student Alert System</h3><p class="project-description">Student information and notification web application.</p>
+            <p class="project-details">The README describes student, lecturer, and administrator modules, authentication, and student alerts. It lists Node.js and MySQL alongside HTML, CSS, and JavaScript.</p>
+            <div class="tech-tags"><span>Node.js</span><span>MySQL</span><span>JavaScript</span></div>
+            <div class="project-links"><a href="https://github.com/38780431/Student-Alert-System" class="btn btn-outline" target="_blank" rel="noopener">View Code</a></div>
+        </article>
+        <article class="project-card" data-category="web-apps">
+            <div class="project-preview preview-wifi"><i class="bx bx-wifi" aria-hidden="true"></i></div>
+            <h3>Wi-Fi Billing System</h3><p class="project-description">JavaScript repository for a Wi-Fi billing project.</p>
+            <p class="project-details">The public repository includes a JavaScript package manifest. See the source repository for implementation details and setup instructions.</p>
+            <div class="tech-tags"><span>JavaScript</span></div>
+            <div class="project-links"><a href="https://github.com/38780431/WIFI-BILLING-SY" class="btn btn-outline" target="_blank" rel="noopener">View Code</a></div>
+        </article>
+        <article class="project-card" data-category="web-apps">
+            <div class="project-preview preview-housing"><i class="bx bx-home-heart" aria-hidden="true"></i></div>
+            <h3>Smart Housing</h3><p class="project-description">Web-based rental house management system.</p>
+            <p class="project-details">A public repository described as a web-based rental house management system. Source and project details are available on GitHub.</p>
+            <div class="tech-tags"><span>Housing</span><span>Web application</span></div>
+            <div class="project-links"><a href="https://github.com/38780431/SMART-HOUSING" class="btn btn-outline" target="_blank" rel="noopener">View Code</a></div>
+        </article>
+        <article class="project-card" data-category="portfolios web-apps">
+            <div class="project-preview preview-auth"><i class="bx bx-lock-alt" aria-hidden="true"></i></div>
+            <h3>Portfolio with Login and Registration</h3><p class="project-description">PHP portfolio with sign-in and account registration pages.</p>
+            <p class="project-details">The repository describes login and registration functionality connected to a local development environment. The hosted URL did not serve a working application, so it is not listed as a demo.</p>
+            <div class="tech-tags"><span>PHP</span><span>Authentication</span></div>
+            <div class="project-links"><a href="https://github.com/38780431/japheth-ralph-portfolio-website-with-login-page" class="btn btn-outline" target="_blank" rel="noopener">View Code</a></div>
+        </article>
+        <article class="project-card" data-category="websites portfolios">
+            <div class="project-preview preview-websites"><i class="bx bx-layer" aria-hidden="true"></i></div>
+            <h3>My Websites Collection</h3><p class="project-description">A collection of practical website projects.</p>
+            <p class="project-details">A collection of practical website files, profile pages, and shared assets. Its former hosted URL currently returns an error, so only the repository link is shown.</p>
+            <div class="tech-tags"><span>HTML</span><span>Web projects</span></div>
+            <div class="project-links"><a href="https://github.com/38780431/my-websites" class="btn btn-outline" target="_blank" rel="noopener">View Code</a></div>
+        </article>
+        <article class="project-card" data-category="websites">
+            <div class="project-preview preview-nutrition has-screenshot"><img src="assets/nutri-haven.png" alt="Screenshot of the Nyar Migori Nutri-Haven website" loading="lazy"></div>
+            <h3>Nyar Migori Nutri-Haven</h3><p class="project-description">A healthy food collection and meal showcase.</p>
+            <p class="project-details">The live site presents a healthy food collection, menu items, daily specials, customer testimonials, and contact details.</p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links"><a href="https://nyar-migori-nutri-haven.vercel.app" class="btn" target="_blank" rel="noopener">Live Demo</a><a href="https://github.com/38780431/Nyar-migori-Nutri-haven" class="btn btn-outline" target="_blank" rel="noopener">View Code</a></div>
+        </article>
+        <article class="project-card" data-category="education">
+            <div class="project-preview preview-attendance"><i class="bx bx-check-square" aria-hidden="true"></i></div>
+            <h3>Student Attendance System Project Report</h3><p class="project-description">A paperless student attendance project document.</p>
+            <p class="project-details">This repository contains a project report document and a short README; it does not currently contain a runnable application.</p>
+            <div class="tech-tags"><span>Student attendance</span><span>Project report</span></div>
+            <div class="project-links"><a href="https://github.com/38780431/STUDENT-ATTENDANCE-MANAGEMENT-SYSTEM-" class="btn" target="_blank" rel="noopener">View Project Files</a></div>
+        </article>
+        <article class="project-card" data-category="portfolios">
+            <div class="project-preview preview-portfolio has-screenshot"><img src="assets/japheth-portfolio.png" alt="Screenshot of Japheth Ralph's portfolio website" loading="lazy"></div>
+            <h3>Japheth Ralph Portfolio Website</h3><p class="project-description">My complete HTML portfolio project.</p>
+            <p class="project-details">A portfolio built around my profile, technical skills, projects, services, and contact information.</p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links"><a href="https://japheth-ralph-portfolio-website.vercel.app" class="btn" target="_blank" rel="noopener">Live Demo</a><a href="https://github.com/38780431/japheth-ralph-portfolio-website" class="btn btn-outline" target="_blank" rel="noopener">View Code</a></div>
+        </article>
+        <article class="project-card" data-category="portfolios web-apps">
+            <div class="project-preview preview-portfolio"><i class="bx bx-refresh" aria-hidden="true"></i></div>
+            <h3>Portfolio with Account Features</h3><p class="project-description">A portfolio project with account and password-reset flows.</p>
+            <p class="project-details">The repository README describes a Node.js and SQLite version with login, registration, and password reset. It requires server and mail configuration and has no verified public demo.</p>
+            <div class="tech-tags"><span>Node.js</span><span>SQLite</span><span>Authentication</span></div>
+            <div class="project-links"><a href="https://github.com/38780431/PORTFOLIO_UPDATED" class="btn btn-outline" target="_blank" rel="noopener">View Code</a></div>
+        </article>
+        <article class="project-card" data-category="portfolios">
+            <div class="project-preview preview-portfolio"><i class="bx bx-grid-alt" aria-hidden="true"></i></div>
+            <h3>Complete Portfolio</h3><p class="project-description">Another public portfolio website repository.</p>
+            <p class="project-details">The repository includes portfolio page files and shared assets. Browse the source to see this version's design and implementation.</p>
+            <div class="tech-tags"><span>Portfolio</span><span>Web design</span></div>
+            <div class="project-links"><a href="https://github.com/38780431/COMPLETE-PORTFOLIO" class="btn btn-outline" target="_blank" rel="noopener">View Code</a></div>
+        </article>
+        <article class="project-card" data-category="portfolios web-apps">
+            <div class="project-preview preview-auth"><i class="bx bx-log-in-circle" aria-hidden="true"></i></div>
+            <h3>Portfolio Login and Signup</h3><p class="project-description">PHP login and signup pages.</p>
+            <p class="project-details">The repository description identifies this as a login and signup page project. It is not presented as a hosted demo because no working deployment is configured.</p>
+            <div class="tech-tags"><span>PHP</span><span>Authentication</span></div>
+            <div class="project-links"><a href="https://github.com/38780431/portfolio" class="btn btn-outline" target="_blank" rel="noopener">View Code</a></div>
+        </article>
+        </div>
+    </div></section></main>
+    <footer><div class="container">&copy; <span id="year"></span> Japheth Ralph Nyadwera. All rights reserved.</div></footer>
+    <button class="back-to-top" type="button" aria-label="Back to top" title="Back to top" hidden><i class="bx bx-up-arrow-alt" aria-hidden="true"></i></button>
+    <script src="script.js"></script>
+</body>
+</html>
