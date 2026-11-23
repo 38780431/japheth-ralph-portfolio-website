@@ -320,6 +320,10 @@ header .container {
   box-shadow: 0 12px 30px rgba(184, 243, 91, 0.16);
 }
 
+.install-button[hidden] {
+  display: none;
+}
+
 .profile-image-container {
   position: relative;
   max-width: 400px;

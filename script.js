@@ -3,6 +3,7 @@ const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const themeToggle = document.querySelector('.theme-toggle');
 const backToTop = document.querySelector('.back-to-top');
+const installButton = document.querySelector('#install-app');
 
 const applyTheme = theme => {
     const isLight = theme === 'light';
@@ -72,6 +73,48 @@ if (backToTop) {
     backToTop.addEventListener('click', () => {
         const behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
         window.scrollTo({ top: 0, behavior });
+    });
+}
+
+let deferredInstallPrompt = null;
+
+window.addEventListener('beforeinstallprompt', event => {
+    if (!installButton) return;
+
+    event.preventDefault();
+    deferredInstallPrompt = event;
+    installButton.hidden = false;
+});
+
+if (installButton) {
+    installButton.addEventListener('click', async () => {
+        if (!deferredInstallPrompt) return;
+
+        const promptEvent = deferredInstallPrompt;
+        deferredInstallPrompt = null;
+        installButton.hidden = true;
+        try {
+            await promptEvent.prompt();
+            await promptEvent.userChoice;
+        } catch (error) {
+            console.error('Could not show the app installation prompt.', error);
+        }
+    });
+}
+
+window.addEventListener('appinstalled', () => {
+    deferredInstallPrompt = null;
+    if (installButton) installButton.hidden = true;
+});
+
+const isSecurePreview = window.location.protocol === 'https:' ||
+    window.location.hostname === 'localhost' ||
+    window.location.hostname === '127.0.0.1';
+
+if ('serviceWorker' in navigator && isSecurePreview) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js')
+            .catch(error => console.error('Could not register the service worker.', error));
     });
 }
 
