@@ -112,10 +112,8 @@ const isSecurePreview = window.location.protocol === 'https:' ||
     window.location.hostname === '127.0.0.1';
 
 if ('serviceWorker' in navigator && isSecurePreview) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./service-worker.js')
-            .catch(error => console.error('Could not register the service worker.', error));
-    });
+    navigator.serviceWorker.register('./service-worker.js')
+        .catch(error => console.error('Could not register the service worker.', error));
 }
 
 const projectGrid = document.querySelector('.project-grid');
