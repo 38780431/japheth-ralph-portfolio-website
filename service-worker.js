@@ -1,4 +1,4 @@
-const CACHE_NAME = 'jrn-portfolio-v3';
+const CACHE_NAME = 'jrn-portfolio-v4';
 const APP_FILES = [
     '',
     'index.html',
@@ -9,7 +9,6 @@ const APP_FILES = [
     'style.css',
     'script.js',
     'manifest.webmanifest',
-    'JAPHETH RALPH. CV.pdf',
     'image of japheth ralph.jpg',
     'assets/favicon.svg',
     'assets/pwa-icon-192.png',
