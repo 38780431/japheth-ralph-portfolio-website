@@ -998,7 +998,7 @@ footer {
   }
 
   header nav {
-    order: -1;
+    order: 0;
   }
 
   .hamburger.active span:nth-child(1) {
@@ -1015,13 +1015,21 @@ footer {
 
   .nav-links {
     position: fixed;
-    inset: var(--header-height) 0 0;
+    inset: var(--header-height) 15px auto auto;
+    width: min(320px, calc(100vw - 30px));
+    max-height: calc(100vh - var(--header-height) - 16px);
+    max-height: calc(100dvh - var(--header-height) - 16px);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 26px;
-    background: var(--bg);
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 8px 20px;
+    overflow-y: auto;
+    border: 1px solid var(--border);
+    border-radius: 0 0 16px 16px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
@@ -1035,7 +1043,10 @@ footer {
   }
 
   .nav-links a {
-    font-size: 1rem;
+    display: block;
+    padding: 12px 0;
+    font-size: 0.9rem;
+    text-align: right;
   }
 
   #home {

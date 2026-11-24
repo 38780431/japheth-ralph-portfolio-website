@@ -1,4 +1,4 @@
-const CACHE_NAME = 'jrn-portfolio-v2';
+const CACHE_NAME = 'jrn-portfolio-v3';
 const APP_FILES = [
     '',
     'index.html',
